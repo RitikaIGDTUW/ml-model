@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Women Empowerment</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/safeinsight.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Top Header Section -->
+    <div class="top-header">
+        <div class="left-section">
+            <img src="/static/images/logo2-transformed.jpeg" alt="Government Logo">
+        </div>
+        <div class="right-section">
+            <div class="contact-info">
+                <div class="contact-box">
+                    <p>Women Helpline Number</p>
+                    <span>1800-11-9292</span>
+                </div>
+                <div class="contact-box">
+                    <p>For Emergency</p>
+                    <span>112</span>
+                </div>
+            </div>
+            <a href="#" class="login-btn" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary loginbtn">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <p>New user? <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal" data-bs-dismiss="modal">Sign up</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Signup Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="signupForm">
+            <div class="mb-3">
+              <label for="signupEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="signupEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="signupPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="signupPassword" required>
+            </div>
+            <div class="mb-3">
+              <label for="confirmPassword" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="confirmPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Header Section (Navbar) -->
+    <header>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="about.html" target="_blank">About Us</a></li>
+                    <li><a href="safeinsight.html" target="_blank">Safe Insight Quiz</a></li>                    
+                    <li><a href="legal-rights.html" target="_blank">Legal Rights</a></li>                    
+                    <li><a href="wellnessQuiz.html" target="_blank">Wellness Quiz</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+        </div>
+        
+    </header>
+
+
+
+
+
+
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Questionnaire</h1>
+    
+        <form id="abuseForm" class="row justify-content-center g-4">
+            <!-- Card for Age Group -->
+            <div class="col-md-4">
+                <div class="card uniform-card" id="form-card">
+                    <div class="card-body">
+                        <label for="ageGroup" class="form-label">Age Group</label>
+                        <select class="form-select form-select-lg mb-3" id="ageGroup" name="ageGroup">
+                            <option value="" disabled selected>Please choose</option>
+                            <option value="18-24">18-24</option>
+                            <option value="25-34">25-34</option>
+                            <option value="35-44">35-44</option>
+                            <option value="45-54">45-54</option>
+                            <option value="55-64">55-64</option>
+                            <option value="65+">65+</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card for Marital Status -->
+            <div class="col-md-4">
+                <div class="card uniform-card" id="form-card">
+                    <div class="card-body">
+                        <label for="maritalStatus" class="form-label">Marital Status</label>
+                        <select class="form-select form-select-lg mb-3" id="maritalStatus" name="maritalStatus">
+                            <option value="" disabled selected>Please choose</option>
+                            <option value="single">Single</option>
+                            <option value="married">Married</option>
+                            <option value="widowed">Widowed</option>
+                            <option value="divorced">Divorced</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card for Employment Status -->
+            <div class="col-md-4">
+                <div class="card uniform-card" id="form-card">
+                    <div class="card-body">
+                        <label for="employmentStatus" class="form-label">Employment Status</label>
+                        <select class="form-select form-select-lg mb-3" id="employmentStatus" name="employmentStatus">
+                            <option value="" disabled selected>Please choose</option>
+                            <option value="student">Student</option>
+                            <option value="employed">Employed</option>
+                            <option value="unemployed">Unemployed</option>
+                            <option value="retired">Retired</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card for Physical Harm Question -->
+            <div class="col-12 hello">
+                <div class="card uniform-card" id="form-card">
+                    <div class="card-body">
+                        <label for="physicalHarm1" class="form-label">Have you been physically harmed or threatened?</label><br>
+                        <input type="radio" id="physicalHarm1Yes" name="physicalHarm1" value="yes">
+                        <label for="physicalHarm1Yes">Yes</label><br>
+                        <input type="radio" id="physicalHarm1No" name="physicalHarm1" value="no">
+                        <label for="physicalHarm1No">No</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 hello"></div>
+                <div class="card uniform-card" id="form-card">
+                    <div class="card-body">
+                        <label for="controlFeeling" class="form-label">Do you feel controlled, isolated, or frequently insulted by someone?</label><br>
+                        <input type="radio" id="controlFeelingYes" name="controlFeeling" value="yes">
+                        <label for="controlFeelingYes">Yes</label><br>
+                        <input type="radio" id="controlFeelingNo" name="controlFeeling" value="no">
+                        <label for="controlFeelingNo">No</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 hello">
+                <div class="card uniform-card" id="form-card">
+                    <div class="card-body">
+                        <label for="sexualAdvances" class="form-label">Have you experienced unwanted sexual advances or been forced into sexual activities?</label><br>
+                        <input type="radio" id="sexualAdvancesYes" name="sexualAdvances" value="yes">
+                        <label for="sexualAdvancesYes">Yes</label><br>
+                        <input type="radio" id="sexualAdvancesNo" name="sexualAdvances" value="no">
+                        <label for="sexualAdvancesNo">No</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 hello">
+                <div class="card uniform-card" id="form-card">
+                    <div class="card-body">
+                        <label for="financeControl" class="form-label">Is someone controlling your finances or restricting your access to money?</label><br>
+                        <input type="radio" id="financeControlYes" name="financeControl" value="yes">
+                        <label for="financeControlYes">Yes</label><br>
+                        <input type="radio" id="financeControlNo" name="financeControl" value="no">
+                        <label for="financeControlNo">No</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 hello">
+                <div class="card uniform-card" id="form-card">
+                    <div class="card-body">
+                        <label for="onlineHarassment" class="form-label">Are you being harassed, monitored, or threatened online?</label><br>
+                        <input type="radio" id="onlineHarassmentYes" name="onlineHarassment" value="yes">
+                        <label for="onlineHarassmentYes">Yes</label><br>
+                        <input type="radio" id="onlineHarassmentNo" name="onlineHarassment" value="no">
+                        <label for="onlineHarassmentNo">No</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12">
+                <div class="card uniform-card" id="form-card">
+                    <div class="card-body">
+                        <label for="workplaceHarassment" class="form-label">Have you been subjected to unwanted advances, comments, or discrimination at work?</label><br>
+                        <input type="radio" id="workplaceHarassmentYes" name="workplaceHarassment" value="yes">
+                        <label for="workplaceHarassmentYes">Yes</label><br>
+                        <input type="radio" id="workplaceHarassmentNo" name="workplaceHarassment" value="no">
+                        <label for="workplaceHarassmentNo">No</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12">
+                <div class="card uniform-card" id="form-card">
+                    <div class="card-body">
+                        <label for="partnerThreat" class="form-label">Do you feel unsafe or threatened by your partner?</label><br>
+                        <input type="radio" id="partnerThreatYes" name="partnerThreat" value="yes">
+                        <label for="partnerThreatYes">Yes</label><br>
+                        <input type="radio" id="partnerThreatNo" name="partnerThreat" value="no">
+                        <label for="partnerThreatNo">No</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12">
+                <div class="card uniform-card" id="form-card">
+                    <div class="card-body">
+                        <label for="stalking" class="form-label">Is someone following you, showing up at your places, or constantly contacting you against your will?</label><br>
+                        <input type="radio" id="stalkingYes" name="stalking" value="yes">
+                        <label for="stalkingYes">Yes</label><br>
+                        <input type="radio" id="stalkingNo" name="stalking" value="no">
+                        <label for="stalkingNo">No</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Questions -->
+            <!-- Include additional questions as you have listed -->
+    
+            <!-- Submit Button in a separate card -->
+            <div class="text-center p-4" id="form-card">
+                <button type="submit" class="btn btn-warning btn-lg w-100">Submit</button>
+            </div>
+        </form>
+    
+        <div id="result" class="alert alert-info mt-4 text-center" style="display: none;">
+            <h4 id="abuseType"></h4>
+            <p id="recommendedSteps"></p>
+        </div>
+    </div>
+    
+    
+    <script src="/static/js/safeinsight.js"></script>
+    <script src="{{ url_for('static', filename='js/safeinsight.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Women Empowerment</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="about-style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Top Header Section -->
+    <div class="top-header">
+        <div class="left-section">
+            <img src="/static/images/logo2-transformed.jpeg" alt="Government Logo">
+        </div>
+        <div class="right-section">
+            <div class="contact-info">
+                <div class="contact-box">
+                    <p>Women Helpline Number</p>
+                    <span>1800-11-9292</span>
+                </div>
+                <div class="contact-box">
+                    <p>For Emergency</p>
+                    <span>112</span>
+                </div>
+            </div>
+            <a href="#" class="login-btn" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary loginbtn">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <p>New user? <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal" data-bs-dismiss="modal">Sign up</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Signup Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="signupForm">
+            <div class="mb-3">
+              <label for="signupEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="signupEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="signupPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="signupPassword" required>
+            </div>
+            <div class="mb-3">
+              <label for="confirmPassword" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="confirmPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Header Section (Navbar) -->
+    <header>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="about.html" target="_blank">About Us</a></li>
+                    <li><a href="safeinsight#">Safe Insight Quiz</a></li>                    
+                    <li><a href="legal-rights.html" target="_blank">Legal Rights</a></li>                    
+                    <li><a href="wellnessQuiz.html" target="_blank">Wellness Quiz</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container my-5">
+        <div class="aboutus">
+            <h1 class=" about mb-4">About Us</h1>
+        </div>        
+
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <img src="asset/empower.jpeg" alt="Empowering Women" class="img-fluid mb-3">
+            </div>
+            <div class="col-md-6">
+                <h2>Our Mission</h2>
+                <p>At  <Strong>SASHAKT SAATHI</Strong>,  our mission is to empower women by providing them with the knowledge and resources they need to protect themselves from various forms of abuse. We strive to create a safe and informed community where women can access crucial information about their legal rights and the laws that protect them.</p>
+                <p>We have the broad objectives of either protecting or assisting women who are victims of violence or in difficult circumstances or for empowering women.</p>
+                <p>Our commitment is to not only educate but also to inspire women to take action, seek help, and stand up for their rights.</p>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class=" legal col-md-6 order-md-2">
+                <img src="asset/legal.png" alt="Legal Support" class="img-fluid mb-3">
+            </div>
+            <div class="col-md-6">
+                <h2>What We Do</h2>
+                <p>We offer comprehensive education on different types of abuse, including domestic violence, sexual harassment, and emotional abuse. Our platform provides detailed explanations of relevant legal laws and rights, and we aim to equip women with the tools they need to seek justice and support. Through interactive content, resources, and expert advice, we empower women to stand up for themselves and seek the help they need.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class=" community col-md-6">
+                <img src="asset/img-transformed.jpeg" alt="Community and Support" class="img-fluid mb-3">
+            </div>
+            <div class="col-md-6">
+                <h2>Join Our Community</h2>
+                <p>By joining our community, you become part of a supportive network dedicated to women's rights and empowerment. We encourage you to explore our resources, participate in our programs, and share your voice. Together, we can make a difference and work towards a world where every woman feels safe, respected, and empowered.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class=" foot  py-3 text-center">
+        <p>&copy; 2024 Sashakt Sathi . All rights reserved.</p>
+    </footer>
+
+    <footer>
+        <p>&copy; 2024 Sashakt Sathi . All rights reserved.</p>
+    </footer>
+
+    <script src="aboutapp.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
